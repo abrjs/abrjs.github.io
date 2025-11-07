@@ -56,8 +56,8 @@ a:focus-visible {
 .sidebar__nav {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  font-size: 1.05rem;
+  gap: 0.65rem;
+  font-size: 1.15rem;
 }
 
 .sidebar__nav a {
@@ -107,19 +107,22 @@ a:focus-visible {
 
 .bio {
   display: grid;
-  grid-template-columns: minmax(280px, 440px) 360px;
-  gap: 3rem;
+  grid-template-columns: minmax(320px, 520px) auto;
+  gap: 1rem;
   width: 100%;
+  align-items: flex-start;
+  margin-top: 2rem;
 }
 
 .bio__text {
-  font-size: 1.15rem;
-  line-height: 1.5;
-  max-width: 440px;
+  font-size: 1.22rem;
+  line-height: 1.55;
+  max-width: 500px;
+  padding-right: 80px;
 }
 
 .bio__lede {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   margin-top: 0;
 }
 
@@ -179,28 +182,24 @@ a:focus-visible {
 .bio__portrait {
   margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   align-self: flex-start;
 }
 
 .portrait-ring {
-  width: 316px;
-  height: 316px;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
-  background: #bdbdbd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
+  overflow: hidden;
+  margin-left: -40px;
 }
 
 .portrait-ring img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  display: block;
   object-fit: cover;
-  filter: grayscale(100%);
 }
 
 @media (max-width: 980px) {
@@ -211,11 +210,18 @@ a:focus-visible {
 
   .bio {
     grid-template-columns: 1fr;
+    margin-top: 1.5rem;
   }
 
   .portrait-ring {
-    width: 260px;
-    height: 260px;
+    width: 360px;
+    height: 360px;
+    margin-left: 0;
+  }
+
+  .bio__text {
+    max-width: none;
+    padding-right: 0;
   }
 }
 
@@ -235,10 +241,6 @@ a:focus-visible {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-  }
-
-  .sidebar__social {
-    margin-top: 1rem;
   }
 
   .content {
