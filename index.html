@@ -1,86 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Andrea Barajas</title>
-  <meta name="description" content="Criminology researcher focusing on restorative justice, community disorganization, and youth civic empowerment." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <a class="skip-link" href="#about">Skip to content</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Andrea Barajas</title>
+    <meta
+      name="description"
+      content="Criminology researcher Andrea Barajas focuses on restorative justice diversion, survivor care, and community accountability across California."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="logo" href="#">
+          <span class="logo__script">andrea</span>
+          <span>barajas</span>
+        </a>
+        <nav class="sidebar__nav" aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="cv.html">CV</a>
+          <a href="research.html">Research</a>
+        </nav>
 
-  <div class="container">
-    <aside class="sidebar" role="navigation" aria-label="Primary">
-      <h1 class="logo">andrea barajas</h1>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#writing">Writing</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="socials">
-        <a href="mailto:abarajas@example.com" aria-label="Email">✉️</a>
-        <a href="https://github.com/abrjs" aria-label="GitHub">🐙</a>
-      </div>
-    </aside>
+        <div class="sidebar__actions">
+          <a class="sidebar__button" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M5.2 9h3v10h-3zm1.5-1.5a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6zM10 9h2.8v1.6h.04c.4-.8 1.5-1.6 3-1.6 3.2 0 3.8 2.1 3.8 4.8V19h-3v-4.5c0-1.1-.02-2.5-1.6-2.5-1.6 0-1.8 1.2-1.8 2.4V19H10z"
+              />
+            </svg>
+            
+          </a>
+          <a class="sidebar__button" href="mailto:abarajas@example.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 6h16c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2zm0 2v.3l8 4.7 8-4.7V8H4zm0 2.4V16h16v-5.6l-7.4 4.4a1.5 1.5 0 0 1-1.3 0L4 10.4z"
+              />
+            </svg>
+            
+          </a>
+        </div>
+      </aside>
 
-    <main class="content">
-      <!-- ====== ABOUT (edit me) ====== -->
-      <section id="about" class="block">
-        <h2>About</h2>
-        <p>
-          Andrea Barajas is a criminology researcher whose work examines restorative justice, 
-          community disorganization, and youth civic empowerment. She studies how program 
-          fidelity and practitioner support shape outcomes.
-        </p>
-      </section>
-
-      <!-- ====== RESEARCH (edit me) ====== -->
-      <section id="research" class="block">
-        <h2>Research</h2>
-        <ul class="pubs">
-          <li><strong>Thesis:</strong> Proposition 57 & juvenile remand (Difference-in-Differences).</li>
-          <li><strong>Current:</strong> Restorative justice diversion effectiveness; implementation.</li>
-          <li><strong>Methods:</strong> Causal inference, interview analysis, program evaluation.</li>
-        </ul>
-      </section>
-
-      <!-- ====== WRITING (edit me) ====== -->
-      <section id="writing" class="block">
-        <h2>Writing</h2>
-        <ul class="links">
-          <li><a href="#">Policy memo: Greening & CVI to reduce gun violence</a></li>
-          <li><a href="#">Survey: Restorative Justice Diversion for Youth</a></li>
-          <li><a href="#">Methods note: Measuring recidivism</a></li>
-        </ul>
-      </section>
-
-      <!-- ====== CONTACT (edit me) ====== -->
-      <section id="contact" class="block">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:abarajas@example.com">abarajas@example.com</a></p>
-      </section>
-
-      <footer class="footer">
-        <small>&copy; <span id="year"></span> Andrea Barajas</small>
-      </footer>
-    </main>
-
-    <!-- your image path -->
-    <img src="assets/profile.jpg" alt="Portrait of Andrea Barajas" class="portrait">
-
-    <!-- subtle whimsy blobs -->
-    <div class="orb orb-a" aria-hidden="true"></div>
-    <div class="orb orb-b" aria-hidden="true"></div>
-  </div>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+      <main class="content" id="about">
+        <article class="bio">
+          <div class="bio__text">
+            <p class="bio__lede">
+              Andrea Barajas is a criminology researcher focused on restorative justice diversion
+              and community accountability in California.
+            </p>
+            <p>
+              She currently evaluates youth diversion pilots with county probation partners,
+              measuring how survivor care, program fidelity, and community governance affect long-run
+              outcomes. Her mixed-methods practice braids administrative data with narrative
+              interviews to build accountability frameworks rooted in healing, not punitive metrics.
+            </p>
+            <p>
+              Andrea has worked with the California Partnerships for Safe Communities, the Los
+              Angeles County District Attorney’s Office, and campus-based restorative justice
+              clinics to design data systems that honor survivor-defined success. Her writing appears
+              in <a href="#">Juvenile Justice Information Exchange</a> and policy briefs for local
+              coalitions.
+            </p>
+            <p>
+              Born and raised in East Los Angeles, she now splits time between LA and Sacramento
+              while completing her MPH in Community Health Sciences at UCLA. Outside of research, she
+              guest lectures on participatory evaluation and facilitates circles with youth-led civic
+              collectives.
+            </p>
+          </div>
+          <figure class="bio__portrait">
+            <div class="portrait-ring">
+              <img
+                src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=800&q=80"
+                alt="Andrea Barajas"
+                loading="lazy"
+              />
+            </div>
+          </figure>
+        </article>
+      </main>
+    </div>
+  </body>
 </html>
-
